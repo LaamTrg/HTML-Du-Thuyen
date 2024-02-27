@@ -4,7 +4,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 #head-1-blank{
-    margin-top: 118.2px;
+    margin-top: 125.8px;
 }
 #head-2-blank{
     display: none;
@@ -37,6 +37,9 @@
     width: 28%;
     display: inline-block;
     white-space: nowrap;
+}
+#head-top-home h1, h2{
+    margin: 0;
 }
 #head-top h1{
     font-size: 32px;
@@ -71,7 +74,7 @@
 }
 #head-border{
     border-bottom: 1px solid gray;
-    margin: 7px 7%;
+    margin: 15px 7% 5px;
 }
 #head-bottom{
     white-space: nowrap;
@@ -97,7 +100,7 @@
     }
 }
 #head-2-blank{
-    margin-top: 78px;
+    margin-top: 85px;
 }
 #head-2{
     top: 0;
@@ -105,14 +108,14 @@
     text-align: center;
     background-color:antiquewhite;
     position: fixed;
-    padding: 10px 0;
+    padding: 10px 0 5px;
     white-space: nowrap;
 }
 #head-2-open{
     float: left;
     font-size: 20px;
-    padding: 10px 14px;
-    margin: 5px 20px;
+    padding: 10px 16px;
+    margin: 8px 20px;
     text-decoration: none;
     border: 1px solid gray;
     border-radius: 100%;
@@ -125,11 +128,11 @@
     transition: 0.5s ease;
 }
 #head-2-close{
-    padding: 8px;
+    padding: 4px 8px;
     font-size: 51px;
     text-decoration: none;
     border: none;
-    background-color: gray;
+    background-color: whitesmoke;
     cursor: pointer;
 }
 #hidden-bar{
@@ -138,13 +141,14 @@
     width: 0;
     height: 100%;
     text-align: left;
-    display: none;
+    display: flex;
     position: fixed;
-    background-color: aqua;
+    background-color: white;
     flex-direction: column;
     overflow: hidden;
     white-space: nowrap;
-    transition: 1s ease;
+    overflow-x: hidden;
+    transition: 0.5s ease;
     filter: blur(0) !important;
 }
 #hidden-bar a{
@@ -162,6 +166,9 @@
     margin: 5px;
     font-size: 20px;
     font-weight: bold;
+}
+#head-2-home p{
+    margin: 0;
 }
 #head-2-home a{
     color: black;

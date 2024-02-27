@@ -18,9 +18,7 @@ window.onscroll = function(){
 var b = document.getElementById("hidden-bar");
 function openHeader(){
     b.style.width = "50%";
-    b.style.display = "flex";
 }
 function closeHeader(){
     b.style.width = "0%";
-    b.style.display = "none";
 }
