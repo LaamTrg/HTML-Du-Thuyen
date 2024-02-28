@@ -5,253 +5,274 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revervation</title>
     <link rel="stylesheet" href="css/reservation.css"/>
-    <link rel="stylesheet" href="css/layout.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    
     
 </head>
 <body>
     <!-- Trang đặt phòng: chọn lịch, phòng giường đôi/đơn, phòng vip, bao gồm ảnh, ưu đãi khuyến mại -->
     <!-- Header-->
-    <header><section class="section">
-        <nav>
-        <div class="menu">
-            <ul>
-                <li><a href="index.php">HOME</a></li>
-                <li><a href="">ABOUT US</a></li>
-                <li><a href="">CABIN & SUITE</a></li>
-                <li><a href="">EXCLUSIVE OFFER</a></li>
-                <li><a href="">CONTACT US</a></li>
-            </ul>
-            <div class="center">
-                <div class="title"><b>Reservation</b></div>
-                <h2><a href="">HOME </a>> RESERVATION</h2>
-            </div>
-        </div>
-        </nav>
-    </section></header>
+    <?php include("html/header.html");?>
     <!-- Main-->
     <main><section class="section">
+        <div class="center">
+            <div class="title"><b>Reservation</b></div>
+            <h2><a href="index.php">HOME </a>> RESERVATION</h2>
+        </div>
         <div class="container">
-            <div class="booking_seclection">
-                <button class="button1"><a href="/">INSTANT BOOKING</a></button>
-                <button class="button1"><a href="/">BOOKING ON REQUEST</a></button>
-                <button class="button1"><a href="/">PRIVACY POLICY</a></button>
-            </div>
-            <div class="select_date">
-                <h3>select the tour & check-in date</h3>
-                <div class="box-input">
-                    <label>Cruise for: </label>
-                    <select name="city">
-                        <option value="2d1n">2 Days 1 Night</option>
-                        <option value="3d2n">3 Days 2 Nights</option>
+            <div>
+                <div class="booking_seclection">
+                    <button class="button1" id="btndec"><a href="#" id="btndec1">INSTANT BOOKING</a></button>
+                    <button class="button1"><a href="#">BOOKING ON REQUEST</a></button>
+                    <button class="button1"><a href="#">PRIVACY POLICY</a></button>
                 </div>
-                <div class="box-input">
-                    <label>Check-in date: </label>
-                    <input type="date" id="theDate" name="date" placeholder="YYYY-MM-DD"/>
-                </div>
-                <div>
-                    Check-out date:
-                    
-                </div>
-            </div>
-            <!-- Cabin -->
-            <div class="select_room">
-                <div class="cabin_picture">
-                    <div>
-                        <img src="/images/cabin1_1.jpg" >
-                    </div>
-                    
-                </div>
-                <div class="cabin">
-                    <div class="cabin_item">
-                        <h3>Ocean Suite Balcony</h3>
-                        <h4><b>Included: </b>5% Service charge, 10% VAT</h4>
-                    </div>
-                </div>
-                <div class="cabin_price">
-                    <h4><b>Single: </b>USD <span id="price">$564</span></h4>
-                    <h4><b>Double: </b>USD <span id="price">$705</span></h4>
-                </div>
-                <div class="cabin_select">
-                    <div class="box_input">
-                        <label>Number of cabin: </label>
-                        <select name="numberOfCabin">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
+                <div class="select_date">
+                    <p id="asc"><b>SELECT THE TOUR & CHECK-IN DATE</b></p>
+                    <div class="box-input">
+                        <label>Cruise for: </label>
+                        <select id="numberOfDays" name="numday">
+                            <option value="2">2 Days 1 Night</option>
+                            <option value="3">3 Days 2 Nights</option>
                         </select>
-                    </div>
-                    <div class="people_in">
-                        a
-                    </div>
-                </div>
-                <div class="cabin_total">
-                    Total:
-                </div>
-                
-            </div>
-            <div class="select_room">
-                <div class="cabin_picture">
-                    <div>
-                        <img src="/images/cabin2_1.jpg" >
-                    </div>
-                    
-                </div>
-                <div class="cabin">
-                    <div class="cabin_item">
-                        <h3>Ocean Suite Balcony</h3>
-                        <h4><b>Included: </b>5% Service charge, 10% VAT</h4>
+                        <label>Check-in date: </label>
+                        <input type="date" id="checkinDate" onchange="updateCheckoutDate()" name="date" placeholder="MM-DD-YYYY"/>
+                        <label>Check-out date: </label>
+                        <span id="checkoutDate" readonly></span>
                     </div>
                 </div>
-                <div class="cabin_price">
-                    <h4><b>Single: </b>USD <span id="price">$564</span></h4>
-                    <h4><b>Double: </b>USD <span id="price">$705</span></h4>
-                </div>
-                <div class="cabin_select">
-                    <div class="box_input">
-                        <label>Number of cabin: </label>
-                        <select name="numberOfCabin">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select>
-                    </div>
-                    <div class="people_in">
-                        a
-                    </div>
-                </div>
-                <div class="cabin_total">
-                    Total:
-                </div>
-                
-            </div>
-            <div class="select_room">
-                <div class="cabin_picture">
-                    <div>
-                        <img src="/images/cabin3_1.jpg" >
-                    </div>
-                    
-                </div>
-                <div class="cabin">
-                    <div class="cabin_item">
-                        <h3>Ocean Suite Balcony</h3>
-                        <h4><b>Included: </b>5% Service charge, 10% VAT</h4>
-                    </div>
-                </div>
-                <div class="cabin_price">
-                    <h4><b>Single: </b>USD <span id="price">$564</span></h4>
-                    <h4><b>Double: </b>USD <span id="price">$705</span></h4>
-                </div>
-                <div class="cabin_select">
-                    <div class="box_input">
-                        <label>Number of cabin: </label>
-                        <select name="numberOfCabin">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select>
-                    </div>
-                    <div class="people_in">
-                        a
-                    </div>
-                </div>
-                <div class="cabin_total">
-                    Total:
-                </div>
-                
-            </div>
-            <div class="select_room">
-                <div class="cabin_picture">
-                    <div>
-                        <img src="/images/cabin4_1.jpg" >
-                    </div>
-                    
-                </div>
-                <div class="cabin">
-                    <div class="cabin_item">
-                        <h3>Ocean Suite Balcony</h3>
-                        <h4><b>Included: </b>5% Service charge, 10% VAT</h4>
-                    </div>
-                </div>
-                <div class="cabin_price">
-                    <h4><b>Single: </b>USD <span id="price">$564</span></h4>
-                    <h4><b>Double: </b>USD <span id="price">$705</span></h4>
-                </div>
-                <div class="cabin_select">
-                    <div class="box_input">
-                        <label>Number of cabin: </label>
-                        <select name="numberOfCabin">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select>
-                    </div>
-                    <div class="people_in">
-                        a
-                    </div>
-                </div>
-                <div class="cabin_total">
-                    Total:
-                </div>
-                
-            </div>
-            <div class="select_room">
-                <div class="cabin_picture">
-                    <div>
-                        <img src="/images/cabin5_1.jpg" >
-                    </div>
-                    
-                </div>
-                <div class="cabin">
-                    <div class="cabin_item">
-                        <h3>Ocean Suite Balcony</h3>
-                        <h4><b>Included: </b>5% Service charge, 10% VAT</h4>
-                    </div>
-                </div>
-                <div class="cabin_price">
-                    <h4><b>Single: </b>USD <span id="price">$564</span></h4>
-                    <h4><b>Double: </b>USD <span id="price">$705</span></h4>
-                </div>
-                <div class="cabin_select">
-                    <div class="box_input">
-                        <label>Number of cabin: </label>
-                        <select name="numberOfCabin">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select>
-                    </div>
-                    <div class="people_in">
-                        a
-                    </div>
-                </div>
-                <div class="cabin_total">
-                    Total:
-                </div>
-                
-            </div>
+                <!-- Cabin -->
+                <table>
+                    <tr>
+                        <th>Cruise Cabin</th>
+                        <th></th>
+                        <th>Cabin price</th>
+                        <th>Cabin Selection</th>
+                        <th>Total Price</th>
+                    </tr>
+                    <tr>
+                        <td><img src="images/cabin1_1.jpg" height="210px"></td>
+                        <td><div class="cabin_item">
+                            <p class="cabin-name">Ocean Suite Balcony</p>
+                            <p><b>Included: </b>5% Service charge, 10% VAT</p>
+                        </div></td>
+                        <td>
+                            <div class="cabin_price" >
+                                <p><b>Single: </b>USD <span id="price">$297</span></p>
+                                <p><b>Double:</b>USD <span id="price">$371</span></p>
+                            </div></td>
+                        <td><div class="cabin_select"><div class="box_input">
+                            <label>No. of cabin: </label>
+                            <select name="numberOfCabin">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            </div>
+                            <div class="people_in">
+                                <div class="box-input box-input2">
+                                    <label>Adults: </label>
+                                    <select onchange="choosed" id="choose_type" name="city">
+                                        <option value="0">0</option>
+                                        <option value="1">1 Person</option>
+                                        <option value="2">2 People</option>
+                                    </select>
+                                </div>
+                        </div></div></td>
+                        <td><div class="cabintotal" >
+                            Total:
+                            <input type="text" id="price_text_box"/>
+                        </div></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td><img src="/images/cabin2_1.jpg" height="210px"></td>
+                        <td><div class="cabin_item">
+                            <p class="cabin-name">Ocean Suite Balcony Triple</p>
+                            <p><b>Included: </b>5% Service charge, 10% VAT</p>
+                        </div></td>
+                        <td><div class="cabin_price">
+                            <p><b>Triple: </b>USD <span id="price">$557</span></p>
+                        </div></td>
+                        <td><div class="cabin_select">
+                            <div class="box_input">
+                                <label>No. of cabin: </label>
+                                <select name="numberOfCabin">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                            <div class="people_in">
+                                <div class="box-input">
+                                    <label>Adults: </label>
+                                    <select onchange="choosed" id="choose_type" name="city">
+                                        <option value="0">0 </option>
+                                        <option value="1">1 Person</option>
+                                        <option value="2">2 People</option>
+                                        <option value="3">3 People</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div></td>
+                        <td><div class="cabintotal" >
+                            Total:
+                            <input type="text" id="price_text_box"/>
+                        </div></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td><img src="/images/cabin3_1.jpg" height="210px"></td>
+                        <td><div class="cabin_item">
+                            <p class="cabin-name">Ocean Suite Connecting Door</p>
+                            <p><b>Included: </b>5% Service charge, 10% VAT</p>
+                        </div></td>
+                        <td><div class="cabin_price">
+                            <p><b>Triple: </b>USD <span id="price">$564</span></p>
+                            <p><b>Quad: </b>USD <span id="price">$705</span></p>
+                        </div></td>
+                        <td><div class="cabin_select">
+                            <div class="box_input">
+                                <label>No. of cabin: </label>
+                                <select name="numberOfCabin">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </div>
+                            <div class="people_in">
+                                <div class="box-input">
+                                    <label>Adults: </label>
+                                    <select onchange="choosed" id="choose_type" name="city">
+                                        <option value="0">0</option>
+                                        <option value="3">3 People</option>
+                                        <option value="4">4 People</option>
+                                        
+                                    </select>
+                                </div>
+                            </div>
+                        </div></td>
+                        <td><div class="cabintotal" >
+                            Total:
+                            <input type="text" id="price_text_box"/>
+                        </div></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td><img src="/images/cabin4_1.jpg" height="210px"></td>
+                        <td><div class="cabin_item">
+                            <p class="cabin-name">Elegance Suite Balcony Triple</p>
+                            <p><b>Included: </b>5% Service charge, 10% VAT</p>
+                        </div></td>
+                        <td><div class="cabin_price">
+                            <p><b>Triple: </b>USD <span id="price">$559</span></p>
+                        </div></td>
+                        <td><div class="cabin_select">
+                            <div class="box_input">
+                                <label>No. of cabin: </label>
+                                <select name="numberOfCabin">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                            </div>
+                            <div class="people_in">
+                                <div class="box-input">
+                                    <label>Adults: </label>
+                                    <select onchange="choosed" id="choose_type" name="city">
+                                        <option value="0">0</option>
+                                        <option value="3">3 People</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div></td>
+                        <td><div class="cabintotal" >
+                            Total:
+                            <input type="text" id="price_text_box"/>
+                        </div></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td><img src="/images/cabin5_1.jpg" height="210px"></td>
+                        <td><div class="cabin_item">
+                            <p class="cabin-name">President Suite Terrace</p>
+                            <p><b>Included: </b>5% Service charge, 10% VAT</p>
+                        </div></td>
+                        <td><div class="cabin_price">
+                            <p><b>Single: </b>USD <span id="price">$530</span></p>
+                            <p><b>Double:</b>USD <span id="price">$668</span></p>
+                        </div></td>
+                        <td><div class="cabin_select">
+                            <div class="box_input">
+                                <label>No. of cabin: </label>
+                                <select name="numberOfCabin">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </div>
+                            <div class="people_in">
+                                <div class="box-input">
+                                    <label>Adults: </label>
+                                    <select onchange="choosed" id="choose_type" name="city">
+                                        <option value="0">0</option>
+                                        <option value="1">1 Person</option>
+                                        <option value="2">2 People</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div></td>
+                        <td><div class="cabintotal" >
+                            Total:
+                            <input type="text" id="price_text_box"/>
+                        </div></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td><div class="cabintotal" >
+                            <label class="totallabel">Total:</label>
+                            <input type="text" id="price_text_box"/>
+                        </div></td>
+                    </tr>
+                </table>
         </div>
     </section></main>
     <!-- Footer-->
-    <footer><section class="section">
-        <div class="container">
-            
-        </div>
-    </section></footer>
+    <?php include("html/footer.html");?>
     <script type="text/javascript">
         var date = new Date();
 
         var day = date.getDate();
         var month = date.getMonth() + 1;
         var year = date.getFullYear();
-
+        console.log(day);
         if (month < 10) month = "0" + month;
         if (day < 10) day = "0" + day;
 
-        var today = year + "-" + month + "-" + day;
+        var date = year + "/" + month + "/" + day;
 
+        document.getElementById('checkinDate').value = date;
+    
+        
 
-        document.getElementById("theDate").value = today;
-
+        // function calculateCheckOutDate(){
+        //     // Get the input values
+        //     const numberOfDays = parseInt(document.getElementById('numberOfDays').value);
+        //     const checkInDate = new Date(document.getElementById('checkinDate').value);
+        //     // Calculate the check-out date
+        //     const checkOutDate = new Date(checkInDate);
+        //     checkOutDate.setDate(checkOutDate.getDate() + numberOfDays);
+            
+        //     // Display the check-out date
+        //     document.getElementById('checkoutDate').value = formattedCheckoutDate;
+        // }
     </script>
+
 </body>
 </html>
