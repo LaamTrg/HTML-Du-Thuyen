@@ -4,7 +4,8 @@
     font-family: 'Montserrat', sans-serif;
 }
 #head-1-blank{
-    margin-top: 125.8px;
+    height: 125.8px;
+    background-color: black;
 }
 #head-2-blank{
     display: none;
@@ -18,7 +19,7 @@
     display: block;
     position: fixed;
     padding: 3px 0 8px 0;
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(0, 0, 0);
     text-align: center;
     color: white;
 }
@@ -38,7 +39,12 @@
     display: inline-block;
     white-space: nowrap;
 }
-#head-top-home h1, h2{
+#head-top-home h1{
+    font-weight: bold;
+    margin: 0;
+}
+#head-top-home h2{
+    font-weight: normal !important;
     margin: 0;
 }
 #head-top h1{
@@ -106,7 +112,7 @@
     top: 0;
     width: 100%;
     text-align: center;
-    background-color:antiquewhite;
+    background-color:white;
     position: fixed;
     padding: 10px 0 5px;
     white-space: nowrap;
