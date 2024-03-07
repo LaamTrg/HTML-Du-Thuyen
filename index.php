@@ -76,7 +76,7 @@
                             </h5>
                         </div>
                         <div class="sec-4-link">
-                            <a><b>READ MORE</b></a>
+                            <a href="service.php"><b>READ MORE</b></a>
                         </div>
                     </div>
                 </nav>
@@ -92,7 +92,7 @@
                             </h5>
                         </div>
                         <div class="sec-4-link">
-                            <a><b>READ MORE</b></a>
+                            <a href="service.php"><b>READ MORE</b></a>
                         </div>
                     </div>
                     <div class="col-7">
@@ -115,7 +115,7 @@
                             </h5>
                         </div>
                         <div class="sec-4-link">
-                            <a><b>READ MORE</b></a>
+                            <a href="service.php"><b>READ MORE</b></a>
                         </div>
                     </div>
                 </nav>

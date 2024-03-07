@@ -91,6 +91,10 @@
 }
 #head-bottom a{
     color: white;
+    transition: 0.6s ease;
+}
+#head-bottom a:hover{
+    color: goldenrod;
 }
 @media only screen and (max-width: 600px){
     #head-1-blank{
