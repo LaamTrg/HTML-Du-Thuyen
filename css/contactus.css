@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+      
+      
+}
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+.center{
+    background-image: url(/images/contact.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 230px 0 140px 0px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    color: white;
+    
+    
+}
+.title{
+    font-size: 48px;
+}
+.center a{
+    text-decoration: none;
+    color: white;
+}
+.center h2{
+    word-break: break-word;
+    font-weight: 400;
+    font-size: 18px;
+}
+.section{
+    margin: 10px 250px;
+}
+.cont-info{
+    text-align: center;
+    padding: 30px 30px;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    background-image: url(/images/backg-contactus.jpg);
+    background-size: cover;
+    background-position: center center;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.cont-info h3{
+    border-bottom: 1px solid rgb(212, 197, 197);
+    text-transform: uppercase;
+    font-weight: 900;
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.basic-box{
+   
+    float: left;
+    display: grid;
+}
+.basic-box h4{
+    font-weight: 600;
+}
+.form{
+    padding: 20px 40px;
+    
+}
+form button{
+    border: none;
+}
+.get-in-touch{
+    padding: 40px 0;
+    background-color: #F1F3F6;
+    border-radius: 10px;
+}
+.get-in-touch h2{
+    font-size: 40px;
+}
+.mess{
+    height: 300px;
+}
+input{
+    height: 56px
+}
+.btn{
+    background-color: #bf882e;
+    height: 56px;
+    width: 250px;
+    color: white;
+    font-weight: 600;
+}
+.btn:hover{
+    background-color: #bf882e;
+    color: white;
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #000000;
+    display: none; /* Initially hidden */
+}

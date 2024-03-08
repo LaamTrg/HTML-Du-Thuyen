@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+img{
+    max-width: 100%;
+}
+.contain h1, .contain h2, .contain h3, .contain h4, .contain h5,  h6 {
+    color: #543c29;
+    font-weight: 600 !important;
+    font-family: 'Source Sans Pro', sans-serif
+}
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+.contain p {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    word-wrap: break-word;
+    color: #585858;
+    line-height: 1.9;
+    margin: 1rem 0;
+    font-weight: 500;
+}
+.center{
+    background-image: url(/images/aboutus.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 230px 0 140px 0px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    color: white;
+    
+}
+.title{
+    font-size: 48px;
+}
+.center h2 a{
+    text-decoration: none;
+    color: white;
+    
+}
+.center h2{
+    word-break: break-word;
+    font-weight: 400;
+    font-size: 18px;
+}
+.section{
+    margin: 50px 250px;
+}
+.section-title{
+    margin-bottom: 63px;
+    font-size: 28px;
+    color: #543c29;
+    font-family: 'Source Sans Pro', sans-serif;;
+}
+.line-title{
+    width: 20%;
+    height: 1px;
+    margin: 25px auto;
+    background-color: #543c29;
+}
+.youtube{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+.youtube iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.box_show{
+    box-shadow: 0.5px 2.5px 6px 0.5px #383838;
+}
+.title-content{
+    padding-top: 10px;
+    color: #543c29;
+    margin-bottom: 25px;
+}
+.mb{
+    margin-bottom: 40px;
+}
+.number_about {
+    padding: 50px 25px;
+    text-align: center;
+    color: #fff;
+}
