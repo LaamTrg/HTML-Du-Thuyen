@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Thông Tin Nhân Viên Tàu</title>
+    <title>Thông Tin Nhân Viên Tàu</title>
     <style>
-        /* CSS styles go here */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
         }
         header {
-            background-color: #333;
+            background-color: #3b5998;
             color: #fff;
-            padding: 10px;
+            padding: 30px 0;
             text-align: center;
         }
         nav {
-            background-color: #f4f4f4;
-            padding: 10px;
+            background-color: #465e7c;
+            padding: 15px 0;
+            text-align: center;
         }
         nav ul {
             list-style-type: none;
@@ -32,15 +34,25 @@
         }
         nav ul li a {
             text-decoration: none;
-            color: #333;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
         }
         section {
-            padding: 20px;
+            padding: 30px;
+            background-color: #fff;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
         }
         footer {
-            background-color: #333;
+            background-color: #3b5998;
             color: #fff;
-            padding: 10px;
+            padding: 15px 0;
             text-align: center;
             position: fixed;
             bottom: 0;
@@ -61,65 +73,63 @@
         </ul>
     </nav>
     <section id="kinhnghiem">
-        <h2>Kinh Nghiệm Làm Việc</h2>
-        <p>Thông tin về kinh nghiệm làm việc của nhân viên tàu sẽ được cung cấp ở đây:
-             
-        
-        </p>
-           <a>Nguyễn Văn A:Thuyền Trưởng với 18 năm kinh nghiệm </a>
-        <p>
-            <a>Vũ Thị B :Thuyền Viên với 10 năm kinh nghiệm </a> 
-        </p>
-       
-       
-        <p><a>Dương Văn C:Thuyền Viên với 7 năm kinh nghiệm</a></p>
-        <p>Nguyễn Thị D:Thuyền Viên với 5 năm kinh nghiệm </a></p>
-       <p><a> Vũ Văn E:Thuyền Viên với 5 năm kinh nghiệm </a></p>
-
-
+        <h2 style="color: #3b5998; text-align: center; margin-bottom: 20px;">Kinh Nghiệm Làm Việc</h2>
+        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+            <li style="margin-bottom: 15px; padding: 10px; background-color: #f0f0f0; border-radius: 5px;">
+                <span style="font-weight: bold; color: #333;">Nguyễn Văn A:</span> Thuyền Trưởng - <span style="font-weight: bold;">18 năm kinh nghiệm</span>
+            </li>
+            <li style="margin-bottom: 15px; padding: 10px; background-color: #f0f0f0; border-radius: 5px;">
+                <span style="font-weight: bold; color: #333;">Vũ Thị B:</span> Thuyền Viên - <span style="font-weight: bold;">10 năm kinh nghiệm</span>
+            </li>
+            <li style="margin-bottom: 15px; padding: 10px; background-color: #f0f0f0; border-radius: 5px;">
+                <span style="font-weight: bold; color: #333;">Dương Văn C:</span> Thuyền Viên - <span style="font-weight: bold;">7 năm kinh nghiệm</span>
+            </li>
+            <li style="margin-bottom: 15px; padding: 10px; background-color: #f0f0f0; border-radius: 5px;">
+                <span style="font-weight: bold; color: #333;">Nguyễn Thị D:</span> Thuyền Viên - <span style="font-weight: bold;">5 năm kinh nghiệm</span>
+            </li>
+            <li style="margin-bottom: 15px; padding: 10px; background-color: #f0f0f0; border-radius: 5px;">
+                <span style="font-weight: bold; color: #333;">Vũ Văn E:</span> Thuyền Viên - <span style="font-weight: bold;">5 năm kinh nghiệm</span>
+            </li>
+        </ul>
     </section>
+    
     <section id="dieukhoan">
-        <h2>Điều Khoản</h2>
-        <p>Thông tin về các điều khoản liên quan đến công việc của nhân viên tàu sẽ được hiển thị ở đây.</p>
-
-        <p>1. Giới thiệu
-
-            Chào mừng quý khách hàng đến với website chúng tôi.
+        <h2 style="color: #3b5998; text-align: center; margin-bottom: 20px;">Điều Khoản</h2>
+        <div style="background-color: #f5f5f5; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); font-family: Arial, sans-serif;">
+            <p style="color: #000; line-height: 1.6;">
+                1. <span style="font-weight: bold;">Giới thiệu:</span>
+                Chào mừng quý khách hàng đến với website chúng tôi.
             
-            Khi quý khách hàng truy cập vào trang website của chúng tôi có nghĩa là quý khách đồng ý với các điều khoản này. Trang web có quyền thay đổi, chỉnh sửa, thêm hoặc lược bỏ bất kỳ phần nào trong Điều khoản mua bán hàng hóa này, vào bất cứ lúc nào. Các thay đổi có hiệu lực ngay khi được đăng trên trang web mà không cần thông báo trước. Và khi quý khách tiếp tục sử dụng trang web, sau khi các thay đổi về Điều khoản này được đăng tải, có nghĩa là quý khách chấp nhận với những thay đổi đó.
+                Khi quý khách hàng truy cập vào trang website của chúng tôi có nghĩa  Người mua có thể tham khảo các phương thức thanh toán sau đây và lựa chọn áp dụng phương thức phù hợp:
             
-            Quý khách hàng vui lòng kiểm tra thường xuyên để cập nhật những thay đổi của chúng tôi.</p>
-        <p>2. Thanh toán an toàn và tiện lợi
+               là quý khách đồng ý với các điều khoản này. Trang web có quyền thay đổi, chỉnh sửa, thêm hoặc lược bỏ bất kỳ phần nào trong Điều khoản mua bán hàng hóa này, vào bất cứ lúc nào. Các thay đổi có hiệu lực ngay khi được đăng trên trang web mà không cần thông báo trước. Và khi quý khách tiếp tục sử dụng trang web, sau khi các thay đổi về Điều khoản này được đăng tải, có nghĩa là quý khách chấp nhận với những thay đổi đó.
+                
+                Quý khách hàng vui lòng kiểm tra thường xuyên để cập nhật những thay đổi của chúng tôi.
+            </p>
+            <p style="color: #000; line-height: 1.6;">
+                2. <span style="font-weight: bold;">Thanh toán an toàn và tiện lợi:</span>
+                Người mua có thể tham khảo các phương thức thanh toán sau đây và lựa chọn áp dụng phương thức phù hợp:
+            
+            <p> Cách 1: Thanh toán trực tiếp (người mua nhận hàng tại địa chỉ người bán)</p>
+            <p>Cách 2: Thanh toán sau (COD – giao hàng và thu tiền tận nơi)</p>
+                <p>Cách 3: Thanh toán online qua thẻ tín dụng, chuyển khoản</p>
 
-            Người mua có thể tham khảo các phương thức thanh toán sau đây và lựa chọn áp dụng phương thức phù hợp:
-            
-            Cách 1: Thanh toán trực tiếp (người mua nhận hàng tại địa chỉ người bán)
-            Cách 2: Thanh toán sau (COD – giao hàng và thu tiền tận nơi)
-            Cách 3: Thanh toán online qua thẻ tín dụng, chuyển khoản</p>
+            </p>
+        </div>
     </section>
-    <section id="hoidap">
-        <h2>Hỏi Đáp</h2>
-        <p>Các câu hỏi thường gặp và câu trả lời sẽ được hiển thị ở đây.</p>
-        <p> Câu hỏi 01: Du thuyền có những phân khúc về giá như thế nào?</p>
-
-            <p>Câu hỏi 02: Những phân khúc du thuyền hiện tại  đang phân phối là như thế nào?</p>
-            <p>Câu hỏi 03: Mua du thuyền để kinh doanh thì có hợp lý không?</p>
-            <p>Câu hỏi 04: Chơi du thuyền ở sông hay ở biển thì thích hơn? Hà Nội có chơi du thuyền được không?</p> 
-            <p>Câu hỏi 05: Xây dựng bến đỗ du thuyền thì cần những thủ tục và chi phí như thế nào?</p>
-            <p>Câu hỏi 06: Có bao nhiêu nhà phân phối Du thuyền  hiện đang nằm ở vị trí nào?</p>
-            
-            
-    </section>
+    
+    
+    
+    
     <section id="lienhe">
         <h2>Liên Hệ</h2>
-        <p>Thông tin liên hệ của nhân viên tàu:</p>
         <ul>
             <li>Email: example@example.com</li>
             <li>Số điện thoại: 0123-456-789</li>
         </ul>
     </section>
     <footer>
-        <p>Bản quyền © 2024. Trang Thông Tin Nhân Viên Tàu.</p>
+        
     </footer>
 </body>
 </html>
