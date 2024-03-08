@@ -8,13 +8,10 @@ body{
     margin: 0;
     background-color: #fafafa;
     font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     line-height: 1.35;
     
-
-}
-.container{
 
 }
 
@@ -28,41 +25,6 @@ a{
 }
 p{
     margin-bottom: 10px;
-}
-.center {
-    background-image: url(/images/yacht1.jpg);
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    padding: 200px 30px;
-    text-align: center;
-    margin-bottom: 40px;
-    color: rgb(100, 0, 0);
-
-}
-.center b{
-    font-size: 60px;
-    font-family: display;
-}
-.center .title{
-    color: rgb(100, 0, 0);
-    font-size: 55px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.center a{
-    color: rgb(100, 0, 0);
-    text-decoration: none;
-    font-weight: bold;
-    
-}
-.center h2{
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 20px;
-}
-.center a:hover{
-    
-    color: black;
 }
 /* Main*/
 main{
@@ -155,18 +117,22 @@ main{
 }
 .cabin_select{
     float: left;
-    
+    margin: 5px;
     width: 100%;
     font-weight: 400;
 }
 .cabin_select select{
     height: 20px;
-    border: 1px solid rgb(170, 35, 35);
     border-radius: 5px;
-    box-shadow: 1px 2px 2px;
+    height: 22px;
+    margin: 5px 0;
     
 }
-
+.cabin-name a{
+    text-decoration: none;
+    color: rgb(0, 0, 65);
+    font-weight: 700;
+}
 .cabin_total{
     float: left;
     
@@ -191,25 +157,22 @@ table{
 th{
     border: 1px solid gray;
     padding: 8px;
-    background-color: #ddd;
 }
 td{
     border: 1px solid gray;
     padding: 8px;
-    background-color: antiquewhite;
 }
 .totalbabel{
     text-align: right;
 }
 table input{
-    background-color: antiquewhite;
-    border-color: antiquewhite;
+    
 }
 #result{
     border: 0;
 }
 table select{
-    background-color: antiquewhite;
+    
 }
 .cabintotal{
     
@@ -227,7 +190,7 @@ table select{
 #booking-button {
     margin-bottom: 20px;
     text-align: right;
-    background-color: #0074d9;
+    background-color: #bf882e;
     color: #ffffff;
     padding: 10px 20px;
     border: none;
@@ -237,4 +200,6 @@ table select{
     text-decoration: none;
     color: white;
 }
-
+.caro{
+    margin-bottom: 50px;
+}

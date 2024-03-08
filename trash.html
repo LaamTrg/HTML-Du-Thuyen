@@ -273,3 +273,283 @@ img{
 .hotel-card-tittle{
     float: left;
 }
+<section id="kinhnghiem">
+    <h2>Kinh Nghiệm Làm Việc</h2>
+    <p>Thông tin về kinh nghiệm làm việc của nhân viên tàu sẽ được cung cấp ở đây:
+         
+    
+    </p>
+       <a>Nguyễn Văn A:Thuyền Trưởng với 18 năm kinh nghiệm </a>
+    <p>
+        <a>Vũ Thị B :Thuyền Viên với 10 năm kinh nghiệm </a> 
+    </p>
+   
+   
+    <p><a>Dương Văn C:Thuyền Viên với 7 năm kinh nghiệm</a></p>
+    <p>Nguyễn Thị D:Thuyền Viên với 5 năm kinh nghiệm </a></p>
+   <p><a> Vũ Văn E:Thuyền Viên với 5 năm kinh nghiệm </a></p>
+
+
+</section>
+<section id="dieukhoan">
+    <h2>Điều Khoản</h2>
+    <p>Thông tin về các điều khoản liên quan đến công việc của nhân viên tàu sẽ được hiển thị ở đây.</p>
+
+    <p>1. Giới thiệu
+
+        Chào mừng quý khách hàng đến với website chúng tôi.
+        
+        Khi quý khách hàng truy cập vào trang website của chúng tôi có nghĩa là quý khách đồng ý với các điều khoản này. Trang web có quyền thay đổi, chỉnh sửa, thêm hoặc lược bỏ bất kỳ phần nào trong Điều khoản mua bán hàng hóa này, vào bất cứ lúc nào. Các thay đổi có hiệu lực ngay khi được đăng trên trang web mà không cần thông báo trước. Và khi quý khách tiếp tục sử dụng trang web, sau khi các thay đổi về Điều khoản này được đăng tải, có nghĩa là quý khách chấp nhận với những thay đổi đó.
+        
+        Quý khách hàng vui lòng kiểm tra thường xuyên để cập nhật những thay đổi của chúng tôi.</p>
+    <p>2. Thanh toán an toàn và tiện lợi
+
+        Người mua có thể tham khảo các phương thức thanh toán sau đây và lựa chọn áp dụng phương thức phù hợp:
+        
+        Cách 1: Thanh toán trực tiếp (người mua nhận hàng tại địa chỉ người bán)
+        Cách 2: Thanh toán sau (COD – giao hàng và thu tiền tận nơi)
+        Cách 3: Thanh toán online qua thẻ tín dụng, chuyển khoản</p>
+</section>
+<section id="hoidap">
+    <h2>Hỏi Đáp</h2>
+    <p>Các câu hỏi thường gặp và câu trả lời sẽ được hiển thị ở đây.</p>
+    <p> Câu hỏi 01: Du thuyền có những phân khúc về giá như thế nào?</p>
+
+        <p>Câu hỏi 02: Những phân khúc du thuyền hiện tại  đang phân phối là như thế nào?</p>
+        <p>Câu hỏi 03: Mua du thuyền để kinh doanh thì có hợp lý không?</p>
+        <p>Câu hỏi 04: Chơi du thuyền ở sông hay ở biển thì thích hơn? Hà Nội có chơi du thuyền được không?</p> 
+        <p>Câu hỏi 05: Xây dựng bến đỗ du thuyền thì cần những thủ tục và chi phí như thế nào?</p>
+        <p>Câu hỏi 06: Có bao nhiêu nhà phân phối Du thuyền  hiện đang nằm ở vị trí nào?</p>
+        
+        
+</section>
+<section id="lienhe">
+    <h2>Liên Hệ</h2>
+    <p>Thông tin liên hệ của nhân viên tàu:</p>
+    <ul>
+        <li>Email: example@example.com</li>
+        <li>Số điện thoại: 0123-456-789</li>
+    </ul>
+</section>
+<section class="section">
+        <div class="center">
+            <div class="title"><b>Reservation</b></div>
+            <h2><a href="index.php">HOME </a>> RESERVATION</h2>
+        </div>
+        <div class="container">
+            <div>
+                <div class="booking_seclection">
+                    <button class="button1" id="btndec"><a href="#" id="btndec1">INSTANT BOOKING</a></button>
+                    <button class="button1"><a href="contactus.php">BOOKING ON REQUEST</a></button>
+                    <button class="button1"><a href="#">PRIVACY POLICY</a></button>
+                </div>
+                <div class="select_date">
+                    <p id="asc"><b>SELECT THE TOUR & CHECK-IN DATE</b></p>
+                    <div class="box-input">
+                        <label>Cruise for: </label>
+                        <select id="numberOfDays" name="numday">
+                            <option value="2">2 Days 1 Night</option>
+                            <option value="3">3 Days 2 Nights</option>
+                        </select>
+                        <label>Check-in date: </label>
+                        <input type="date" id="checkinDate" onchange="updateCheckOutDate()" name="date" value="" placeholder=""/>
+                        <label>Check-out date: </label>
+                        <input type="date" id="checkoutDate" readonly>
+                    </div>
+                </div>
+                <!-- Cabin -->
+                <table class="table-bordered">
+                    <tr>
+                        <th>Cruise Cabin</th>
+                        <th></th>
+                        <th>Cabin price</th>
+                        <th>Cabin Selection</th>
+                        <th>Total Price</th>
+                    </tr>
+                    <tr>
+                        <td><img src="images/cabin1_1.jpg" height="210px"></td>
+                        <td><div class="cabin_item">
+                            <p class="cabin-name">Ocean Suite Balcony</p>
+                            <p><b>Included: </b>5% Service charge, 10% VAT</p>
+                        </div></td>
+                        <td>
+                            <div class="cabin_price" >
+                                <p><b>Single: </b>USD <span id="price">$297</span></p>
+                                <p><b>Double:</b>USD <span id="price">$371</span></p>
+                            </div></td>
+                        <td><div class="cabin_select"><div class="box_input">
+                            <label>No. of cabin: </label>
+                            <select name="numberOfCabin" onchange="calculate(); total()" id="firstValue">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            </div>
+                            <div class="people_in">
+                                <div class="box-input box-input2">
+                                    <label>Adults: </label>
+                                    <select onchange="calculate(); total()" id="secondValue" name="city">
+                                        <option value="0">0</option>
+                                        <option value="297">1 Person</option>
+                                        <option value="371">2 People</option>
+                                    </select>
+                                </div>
+                        </div></div></td>
+                        <td><div class="cabintotal" >
+                            <p id="result"></p>
+                            
+                        </div></td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/cabin2_1.jpg" height="210px"></td>
+                        <td><div class="cabin_item">
+                            <p class="cabin-name">Ocean Suite Balcony Triple</p>
+                            <p><b>Included: </b>5% Service charge, 10% VAT</p>
+                        </div></td>
+                        <td><div class="cabin_price">
+                            <p><b>Triple: </b>USD <span id="price">$557</span></p>
+                        </div></td>
+                        <td><div class="cabin_select">
+                            <div class="box_input">
+                                <label>No. of cabin: </label>
+                                <select name="numberOfCabin" onchange="calculate2(), total()" id="firstValue2">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                            <div class="people_in">
+                                <div class="box-input">
+                                    <label>Adults: </label>
+                                    <select onchange="calculate2(), total()" id="secondValue2" name="city">
+                                        <option value="0">0 </option>
+                                        <option value="557">3 People</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div></td>
+                        <td><div class="cabintotal" >
+                            <p id="result2"></p>
+                            
+                        </div></td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/cabin3_1.jpg" height="210px"></td>
+                        <td><div class="cabin_item">
+                            <p class="cabin-name">Ocean Suite Connecting Door</p>
+                            <p><b>Included: </b>5% Service charge, 10% VAT</p>
+                        </div></td>
+                        <td><div class="cabin_price">
+                            <p><b>Triple: </b>USD <span id="price">$564</span></p>
+                            <p><b>Quad: </b>USD <span id="price">$705</span></p>
+                        </div></td>
+                        <td><div class="cabin_select">
+                            <div class="box_input">
+                                <label>No. of cabin: </label>
+                                <select name="numberOfCabin" onchange="calculate3(); total()" id="firstValue3">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </div>
+                            <div class="people_in">
+                                <div class="box-input">
+                                    <label>Adults: </label>
+                                    <select onchange="calculate3(); total()" id="secondValue3" name="city">
+                                        <option value="0">0</option>
+                                        <option value="564">3 People</option>
+                                        <option value="705">4 People</option>
+                                        
+                                    </select>
+                                </div>
+                            </div>
+                        </div></td>
+                        <td><div class="cabintotal" >
+                            <p id="result3"></p>
+                            
+                        </div></td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/cabin4_1.jpg" height="210px"></td>
+                        <td><div class="cabin_item">
+                            <p class="cabin-name">Elegance Suite Balcony Triple</p>
+                            <p><b>Included: </b>5% Service charge, 10% VAT</p>
+                        </div></td>
+                        <td><div class="cabin_price">
+                            <p><b>Triple: </b>USD <span id="price">$559</span></p>
+                        </div></td>
+                        <td><div class="cabin_select">
+                            <div class="box_input">
+                                <label>No. of cabin: </label>
+                                <select name="numberOfCabin" onchange="calculate4(); total()" id="firstValue4">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                            </div>
+                            <div class="people_in">
+                                <div class="box-input">
+                                    <label>Adults: </label>
+                                    <select onchange="calculate4(); total()" id="secondValue4" name="city">
+                                        <option value="0">0</option>
+                                        <option value="559">3 People</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div></td>
+                        <td><div class="cabintotal" >
+                            <p id="result4"></p>
+                            
+                        </div></td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/cabin5_1.jpg" height="210px"></td>
+                        <td><div class="cabin_item">
+                            <p class="cabin-name">President Suite Terrace</p>
+                            <p><b>Included: </b>5% Service charge, 10% VAT</p>
+                        </div></td>
+                        <td><div class="cabin_price">
+                            <p><b>Single: </b>USD <span id="price">$530</span></p>
+                            <p><b>Double:</b>USD <span id="price">$668</span></p>
+                        </div></td>
+                        <td><div class="cabin_select">
+                            <div class="box_input">
+                                <label>No. of cabin: </label>
+                                <select name="numberOfCabin" onchange="calculate5(); total()" id="firstValue5">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </div>
+                            <div class="people_in">
+                                <div class="box-input">
+                                    <label>Adults: </label>
+                                    <select onchange="calculate5(); total()" id="secondValue5" name="city">
+                                        <option value="0">0</option>
+                                        <option value="530">1 Person</option>
+                                        <option value="668">2 People</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div></td>
+                        <td><div class="cabintotal">
+                            <p id="result5"></p>
+                            
+                        </div></td>
+                    </tr>
+                <table>    
+                    <tr>
+                        <td><div class="cabintotal" >
+                            
+                            <p id="lastprice"> Total price: <span id="totalprice"></span></p>
+
+                            
+                            
+                        </div></td>
+                    </tr>
+                </table>
+                <div class="btnbooknow" style="display: flex; justify-content: flex-end;">
+                <button id="booking-button" style="display: none;"><a href="#">BOOK NOW</a></button>
+                </div>
+        </div>
+    </section>
