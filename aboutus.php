@@ -22,8 +22,8 @@
     <div class="contain">
     <section class="section">
         <div class="col-lg-12 col-sm-12 col-xs-12">
-            <div class="section-title text-center">
-                <h1>Paradise Vietnam - Top-notch quality from the heart</h1>
+            <div class="section-title">
+                <h1 id="first-text">Paradise Vietnam - Top-notch quality from the heart</h1>
             </div>
             <div class="line-title"></div>
         </div>
@@ -101,7 +101,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-12 col-sm-12 col-xs-12">
               <div class="section-title text-center" style="padding:50px 0">
-                <h2 class="title"> 
+                <h2 class="title" id="pic2"> 
                     Journey to the top
                 </h2>
                 <div class="line-title" style="width:50%"></div>

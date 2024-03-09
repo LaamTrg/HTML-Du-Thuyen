@@ -82,7 +82,7 @@
                 </nav>
                 <nav id="sec-4-row" class="row">
                     <div class="col-5">
-                        <div>
+                        <div class="black-box">
                             <h1>SPA & GYM ROOM</h1>
                             <div class="sec-4-border"></div>
                             <h5>A fitness center is available on our cruise for 24/24 hours and free to use. Why not treat yourself to some 
@@ -123,8 +123,8 @@
         </section>
         <section id="sec-5">
             <div id="sec-5-box">
-                <h5><b>REACH YOUR HIGHER SELF</b></h5>
-                <h1><b>Relax, explore & enjoy onboard</b></h1>
+                <h5 style="color: white;"><b>REACH YOUR HIGHER SELF</b></h5>
+                <h1 style="color: white;"><b>Relax, explore & enjoy onboard</b></h1>
             </div>
         </section>
         <section id="sec-6">

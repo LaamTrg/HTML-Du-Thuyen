@@ -86,7 +86,7 @@
                   <div class="booking_seclection">
                       <button class="button1" id="btndec"><a href="#" id="btndec1">INSTANT BOOKING</a></button>
                       <button class="button1"><a href="contactus.php">BOOKING ON REQUEST</a></button>
-                      <button class="button1"><a href="#">PRIVACY POLICY</a></button>
+                      <button class="button1"><a href="crew.php">PRIVACY POLICY</a></button>
                   </div>
                   <div class="select_date">
                       <p id="asc"><b>SELECT THE TOUR & CHECK-IN DATE</b></p>

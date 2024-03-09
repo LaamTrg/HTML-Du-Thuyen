@@ -58,8 +58,19 @@ body {
 .section-title{
     margin-bottom: 63px;
     font-size: 28px;
-    color: #543c29;
-    font-family: 'Source Sans Pro', sans-serif;;
+    
+    font-family: 'Source Sans Pro', sans-serif;
+    background-image: url(https://www.shutterstock.com/image-photo/palm-tree-on-tropical-beach-600nw-2154569741.jpg);
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 60px;
+}
+#first-text{
+    color: #300c029d;
+    display: inline-block;
 }
 .line-title{
     width: 20%;
