@@ -185,7 +185,7 @@
                       <tr>
                           <td><img src="/images/cabin3_1.jpg" height="210px"></td>
                           <td><div class="cabin_item">
-                              <p class="cabin-name"><a href="#" id="modal3">Ocean Suite Connecting Door</a></p>
+                              <p class="cabin-name"><a href="room3.php" id="modal3">Ocean Suite Connecting Door</a></p>
                               <p><b>Included: </b>5% Service charge, 10% VAT</p>
                               
                           </div></td>
@@ -221,7 +221,7 @@
                       <tr>
                           <td><img src="/images/cabin4_1.jpg" height="210px"></td>
                           <td><div class="cabin_item">
-                              <p class="cabin-name"><a href="#" id="modal4">Elegance Suite Balcony Triple</a></p>
+                              <p class="cabin-name"><a href="room4.php" id="modal4">Elegance Suite Balcony Triple</a></p>
                               <p><b>Included: </b>5% Service charge, 10% VAT</p>
                               
                           </div></td>
@@ -255,7 +255,7 @@
                       <tr>
                           <td><img src="/images/cabin5_1.jpg" height="210px"></td>
                           <td><div class="cabin_item">
-                              <p class="cabin-name"><a href="#" id="modal5">President Suite Terrace</a></p>
+                              <p class="cabin-name"><a href="room5.php" id="modal5">President Suite Terrace</a></p>
                               <p><b>Included: </b>5% Service charge, 10% VAT</p>
                           </div></td>
                           <td><div class="cabin_price">

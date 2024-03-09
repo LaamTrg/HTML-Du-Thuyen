@@ -67,7 +67,7 @@
     <nav>
         <ul>
             <li><a href="#kinhnghiem">EXPERIENCE</a></li>
-            <li><a href="#dieukhoan">Private POLICY</a></li>
+            <li><a href="#dieukhoan">PRIVATE POLICY</a></li>
             <li><a href="#hoidap">QUESTION & ANSWER</a></li>
         </ul>
     </nav>
