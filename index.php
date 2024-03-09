@@ -97,7 +97,7 @@
                     </div>
                     <div class="col-7">
                         <img class="image-1 image-right" src="images/gym1.jpg" width="60%">
-                        <img class="image-2 image-left" src="images/spa1.jpg" width="60%">
+                        <img class="image-2 image-left" src="images/spa-1.jpg" width="60%">
                     </div>
                 </nav>
                 <nav class="row">
